@@ -21,6 +21,7 @@
         <module>prerequisite-check</module>
         <module>prerequisite-check-boot</module>
         <module>exercise-1</module>
+        <module>exercise-2</module>
     </modules>
 
 </project>
