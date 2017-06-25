@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>springcourse</groupId>
+    <artifactId>springcourse_2_0</artifactId>
+    <packaging>pom</packaging>
+    <name>Spring Course 2.0</name>
+    <version>2.0.0</version>
+
+    <developers>
+        <developer>
+            <name>Amit Tal</name>
+            <email>amitt03@gmail.com</email>
+        </developer>
+    </developers>
+
+    <modules>
+        <module>prerequisite-check</module>
+        <module>prerequisite-check-boot</module>
+        <module>exercise-1</module>
+    </modules>
+
+</project>
