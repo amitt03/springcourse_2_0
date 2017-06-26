@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>exercise-3</artifactId>
+    <artifactId>exercise-4</artifactId>
     <packaging>jar</packaging>
-    <name>Exercise 3</name>
+    <name>Exercise 4</name>
 
     <parent>
         <artifactId>springcourse_2_0</artifactId>
