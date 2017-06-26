@@ -28,21 +28,14 @@ public class BookLoader {
     @PostConstruct
     public void loadBooks() throws IOException {
         ClassPathResource csvResource = new ClassPathResource("books.csv");
-        BufferedReader br = null;
-        String line = null;
-        try {
-            br = new BufferedReader(new InputStreamReader(csvResource.getInputStream()));
+        String line;
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(csvResource.getInputStream()))) {
             while ((line = br.readLine()) != null) {
                 String[] bookDetails = line.split(",");
                 Book book = new Book(bookDetails[0], bookDetails[1]);
                 book.setDetails(bookDetails[2]);
                 library.addNewBook(book);
             }
-        } finally {
-            if (br != null) {
-                try {br.close();} catch (Exception ex) {}
-            }
         }
-
     }
 }
